@@ -15,7 +15,7 @@ int main(){
 
 	edad=anios*365;
 
-	printf("Tienes %d de edad \n",edad);
+	printf("Tienes %d dias de edad \n",edad);
 
 
 	return 0;
