@@ -22,7 +22,7 @@ int main(){
 	dif = a - b;
 
 	printf("La suma entre A y B es %d \n", sum);
-	printf("La suma entre A y B es %d \n", dif);
+	printf("La diferencia entre A y B es %d \n", dif);
 
 
 	return 0;
