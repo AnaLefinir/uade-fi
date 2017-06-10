@@ -13,4 +13,6 @@ int main(){
     {
         B[i] = A[9-i];
     }
+
+    return 0;
 }
