@@ -19,7 +19,7 @@ int main ()
 
     while(i < 30)
     {   
-        if (num % 2 == 0 && num % 3 == 0)
+        if (num % 2 != 0 && num % 3 == 0)
         {
             vector[i] = num;
             i = i + 1; 
