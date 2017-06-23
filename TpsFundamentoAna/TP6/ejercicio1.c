@@ -1,4 +1,4 @@
-#include <std.h>
+#include <stdio.h>
 
 /*
     Escribir una función para ingresar desde el teclado una serie de números reales (no más de
@@ -8,7 +8,7 @@
 
 int vectordereales ()
 {
-    int vector[10];
+    int vector[50];
     int num = 0;
     int i = 0;
     int j = 0;
@@ -17,7 +17,7 @@ int vectordereales ()
     printf("Ingrese un valor");
     scanf("%d", &num);
 
-    while(num != -1 && i < 10)
+    while(num != -1 && i < 50)
     {
         vector[i] = num;
         sum = sum + vector[i];
