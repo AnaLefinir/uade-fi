@@ -28,10 +28,11 @@ int main ()
     int A[100];
     int valor = -1;
     int count = 0;
+    int i = 0;
 
-    while (i<49) 
+    while (i<99) 
     {
-        printf("Ingrese un num");
+        printf("Ingrese un num\n");
         scanf("%d", &valor);
 
         A[i] = valor;
@@ -44,11 +45,14 @@ int main ()
         else
         {
             A[i] = 0;
+            count = count + 1;
         }
 
         i = i + 1;
         
     }
+
+    printf("Valores ingresados sin raiz exacta: %d", count);
 
     return 0;
 }
