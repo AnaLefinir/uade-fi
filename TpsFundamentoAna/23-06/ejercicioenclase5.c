@@ -6,7 +6,7 @@ int main ()
     int term = 7;
     int i = 1;
 
-    while (count < 30)
+    while (i < 30)
     {
         if(i % 2 == 0)
         {
