@@ -37,6 +37,7 @@ int main ()
 
     int valor = 0;
     int cant = 0;
+    int i = 0;
 
     for (i = 0; i < 343000; i = i + 1)
     {
