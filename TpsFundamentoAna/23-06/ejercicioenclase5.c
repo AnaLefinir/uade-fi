@@ -1,4 +1,4 @@
-Dada la sucesión {7, 14, 16, 32, 34, 68} informar que valor se obtiene en el termino 30.__d_
+Dada la sucesión {7, 14, 16, 32, 34, 68} informar que valor se obtiene en el termino 30.
 
 int main () 
 {
