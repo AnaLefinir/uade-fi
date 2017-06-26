@@ -6,6 +6,22 @@ colmillos que tiene la mitad de dígitos que el original.
 Tiene los mismos dígitos que los colmillos y en la misma cantidad aunque en cualquier orden. Los colmillos
 no acaban en cero.
 
+
+int ingresevalor ()
+{
+    int valor = -1;
+
+    printf("Ingrese un num de dos dígitos\n");
+    scanf("%d", &valor);
+    while(evaluarnum(valor, 2) == -1)
+    {
+        printf("Ingrese otro num de dos dígitos\n");
+        scanf("%d", &valor);
+    }
+
+    return valor;
+}
+
 int evaluarnum (int x, int dig)
 {
     int cant = 0;
@@ -39,49 +55,30 @@ int main ()
     int j = 0;
     int count = 0;
 
-    printf("Ingrese el 1° num de dos dígitos");
-    scanf("%d", &num1);
-    while(evaluarnum(num1, 2) == -1)
-    {
-        printf("Ingrese otro num de dos dígitos");
-        scanf("%d", &num1);
-    }
-
-    printf("Ingrese el 2° num de dos dígitos");
-    scanf("%d", &num2);
-    while(evaluarnum(num2, 2) == -1)
-    {
-        printf("Ingrese otro num de dos dígitos");
-        scanf("%d", &num2);
-    }
+    num1 = ingresevalor();
+    num2 = ingresevalor();
 
     prod = num1 * num2;
 
     if(evaluarnum(prod, 4) == 1)
     {
-        while(prod > 0)
+        for( i = 0; i < 4 && prod > 0; i = i + 1)
         {
             P[i] = prod % 10;
             prod = prod / 10;
-            i = i + 1;
         }
 
-        while(j < 4)
+        for (j = 0; j < 4; j = j + 1)
         {
             if(num1 > 0)
             {
                 N[j] = num1 % 10;
-                num1 = num1 / 10;
-                j = j + 1;
+                num1 = num1 / 10; 
             }
             else
             {
-                if(num2 > 0)
-                {
-                    N[j] = num2 % 10;
-                    num2 = num2 / 10;
-                    j = j + 1;
-                }
+                N[j] = num2 % 10;
+                num2 = num2 / 10;     
             }
         }
 
